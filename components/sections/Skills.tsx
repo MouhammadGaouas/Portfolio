@@ -7,18 +7,18 @@ const techStack = [
   { name: "Next.js", icon: "/nextjs-fill-svgrepo-com.svg" },
   { name: "TypeScript", icon: "/typescript-svgrepo-com.svg" },
   { name: "JavaScript", icon: "/javascript-svgrepo-com.svg" },
-  { name: "Node.js", icon: "nodejs-1-logo-svgrepo-com.svg" },
-  { name: "Tailwind CSS", icon: "Tailwind-CSS.png" },
-  { name: "Python", icon: "python-svgrepo-com.svg" },
-  { name: "Git", icon: "Git.png" },
-  { name: "Docker", icon: "Docker.svg" },
-  { name: "PostgreSQL", icon: "PostgresSQL.svg" },
-  { name: "MongoDB", icon: "MongoDB.svg" },
-  { name: "HTML", icon: "HTML5.svg" },
-  { name: "CSS", icon: "CSS3.svg" },
-  { name: "Figma", icon: "Figma.svg" },
-  { name: "Numpy", icon: "NumPy.svg"},
-  { name: "Pandas", icon: "Pandas.svg"}
+  { name: "Node.js", icon: "/nodejs-1-logo-svgrepo-com.svg" },
+  { name: "Tailwind CSS", icon: "/Tailwind-CSS.png" },
+  { name: "Python", icon: "/python-svgrepo-com.svg" },
+  { name: "Git", icon: "/Git.png" },
+  { name: "Docker", icon: "/Docker.svg" },
+  { name: "PostgreSQL", icon: "/PostgresSQL.svg" },
+  { name: "MongoDB", icon: "/MongoDB.svg" },
+  { name: "HTML", icon: "/HTML5.svg" },
+  { name: "CSS", icon: "/CSS3.svg" },
+  { name: "Figma", icon: "/Figma.svg" },
+  { name: "Numpy", icon: "/NumPy.svg" },
+  { name: "Pandas", icon: "/Pandas.svg" }
 ];
 
 function MarqueeRow({
@@ -46,7 +46,7 @@ function MarqueeRow({
             key={`${tech.name}-${i}`}
             className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 py-4 shrink-0 hover:bg-white/10 hover:border-white/20 transition-colors duration-200"
           >
-            <Image width={40} src={tech.icon} alt="" />
+            <Image width={40} height={40} src={tech.icon} alt="" />
             <span className="text-base font-medium text-neutral-300 whitespace-nowrap">
               {tech.name}
             </span>

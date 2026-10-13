@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import Menu from "./Menu";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -44,7 +45,7 @@ export default function Navigation() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-5 py-2.5 text-base font-medium text-neutral-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all duration-200"
+            className="hidden md:flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-5 py-2.5 text-base font-medium text-neutral-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all duration-200"
           >
             <svg
               className="h-5 w-5"
@@ -60,6 +61,9 @@ export default function Navigation() {
             </svg>
             GitHub
           </a>
+
+          {/* Hamburger (mobile) */}
+          <Menu links={navLinks} />
         </nav>
       </div>
     </motion.header>
