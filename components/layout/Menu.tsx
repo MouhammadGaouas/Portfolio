@@ -23,7 +23,9 @@ export default function Menu({ links }: { links: NavLink[] }) {
 
     document.addEventListener("keydown", onKeyDown);
     document.addEventListener("mousedown", onMouseDown);
+    
     return () => {
+      
       document.removeEventListener("keydown", onKeyDown);
       document.removeEventListener("mousedown", onMouseDown);
     };

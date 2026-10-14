@@ -13,7 +13,7 @@ export default function Header() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-sm tracking-widest uppercase text-neutral-400"
         >
-          👋 Hello, I&apos;m
+          Hello, I&apos;m
         </motion.p>
 
         {/* Name */}

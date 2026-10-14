@@ -52,7 +52,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { label: "Experience", value: "2+ Years" },
-                { label: "Projects", value: "10+" },
+                { label: "Projects", value: "3+" },
                 { label: "Technologies", value: "15+" },
                 { label: "Commitment", value: "100%" },
               ].map((item) => (
